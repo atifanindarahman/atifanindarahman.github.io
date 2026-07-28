@@ -84,6 +84,7 @@ img{ max-width:100%; display:block; }
   padding-left: 1rem;
   margin-top: 1.5rem;
 }
+.col-note:empty{ display:none; }
 .section-dark .col-note{ color: rgba(247,245,238,0.6); }
 .light-body{ color: rgba(247,245,238,0.82); }
 
@@ -162,9 +163,9 @@ img{ max-width:100%; display:block; }
   max-width: var(--max-w); margin: 0 auto; width:100%;
 }
 .hero-title{
-  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-size: clamp(2.6rem, 7vw, 4.75rem);
   font-weight: 600;
-  line-height: 0.98;
+  line-height: 1.05;
   letter-spacing: -0.02em;
   margin: 0 0 1.5rem;
 }
@@ -229,6 +230,15 @@ img{ max-width:100%; display:block; }
 .fact-label{ font-size:0.72rem; color: var(--accent); text-transform:uppercase; letter-spacing:0.06em; }
 .fact-value{ font-size:0.85rem; }
 
+.profile-photo{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  margin-top: 1.5rem;
+}
+
 /* ============================================
    RESEARCH LIST
    ============================================ */
@@ -250,6 +260,12 @@ img{ max-width:100%; display:block; }
   border: 1px solid var(--border);
 }
 .project-visual{ line-height:0; border-bottom: 1px solid var(--border); }
+.project-visual img{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
 .pv-bg{ fill: #E3DECE; }
 .pv-bg-b{ fill: #E0DFD3; }
 .pv-line{ fill:none; stroke: var(--line); stroke-width:2; opacity:0.55; }
@@ -270,13 +286,18 @@ img{ max-width:100%; display:block; }
 .project-tag{ font-size: 0.72rem; color: var(--accent); padding: 1.25rem 1.5rem 0; letter-spacing: 0.03em; }
 .project-card h3{ font-size: 1.3rem; padding: 0.5rem 1.5rem 0; line-height:1.25; }
 .project-card p{ padding: 0 1.5rem; font-size: 0.94rem; }
-.project-meta{ font-size: 0.72rem; color: var(--ink-soft); padding: 0 1.5rem 1rem; }
+.project-meta{ font-size: 0.72rem; color: var(--ink-soft); padding: 0 1.5rem 0.4rem; }
+.project-meta:last-of-type{ padding-bottom: 1.5rem; }
 .project-link{
   display:block; font-size: 0.76rem; color: var(--accent);
   text-decoration:none; padding: 0.9rem 1.5rem; border-top: 1px solid var(--border);
   transition: background 0.15s ease;
 }
 .project-link:hover{ background: rgba(168,71,31,0.07); }
+.project-link-static{
+  color: var(--ink-soft); cursor: default; opacity: 0.75;
+}
+.project-link-static:hover{ background: none; }
 .project-card p code{
   font-family: var(--font-mono); font-size: 0.85em; background: rgba(31,46,43,0.06);
   padding: 0.1em 0.35em; border-radius: 2px;
@@ -305,6 +326,9 @@ img{ max-width:100%; display:block; }
 .pub-item{ border-left: 2px solid var(--border); padding-left: 1.1rem; }
 .pub-type{ font-size: 0.72rem; color: var(--accent); margin-bottom: 0.35rem; }
 .pub-title{ font-size: 1rem; color: var(--ink); }
+.pub-title a{ color: var(--accent); text-decoration: underline; text-decoration-color: rgba(168,71,31,0.35); text-underline-offset: 2px; }
+.pub-title a:hover{ text-decoration-color: var(--accent); }
+.pub-desc{ font-size: 0.88rem; color: var(--ink-soft); margin-top: 0.5rem; }
 
 /* ============================================
    CONTACT
