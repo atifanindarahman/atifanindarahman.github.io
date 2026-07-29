@@ -263,7 +263,10 @@ img{ max-width:100%; display:block; }
 .project-visual img{
   width: 100%;
   height: auto;
+  max-height: 420px;
+  object-fit: contain;
   display: block;
+  margin: 0 auto;
 }
 .pv-bg{ fill: #E3DECE; }
 .pv-bg-b{ fill: #E0DFD3; }
