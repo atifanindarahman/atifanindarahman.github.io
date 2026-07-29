@@ -259,11 +259,10 @@ img{ max-width:100%; display:block; }
   background: var(--paper-card);
   border: 1px solid var(--border);
 }
-.project-visual{ line-height:0; border-bottom: 1px solid var(--border); }
+.project-visual{ line-height:0; border-bottom: 1px solid var(--border); background: var(--paper-card); }
 .project-visual img{
   width: 100%;
-  height: 260px;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 .pv-bg{ fill: #E3DECE; }
