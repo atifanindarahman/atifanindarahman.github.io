@@ -48,7 +48,7 @@ content="website">
       <path class="contour-line c5" d="M-50,290 C240,280 340,320 540,290 C740,260 840,310 1040,280 C1170,260 1200,270 1300,260" />
     </svg>
   </div>
-  <div class="hero-inner">
+  <div class="hero-inner has-updates">
     <h1 class="hero-title">Atif Aninda Rahman</h1>
     <p class="hero-role">MS in Geographic Information Science, University of Denver Urban Networks, Accessibility &amp; GeoAI</p>
     <p class="hero-desc"><strong>Prospective PhD student in Geography / GIScience / Civil Engineering (Fall 2027).</strong></br> I study urban accessibility, mobility equity, and GeoAI. My research combines GIS, remote sensing, spatial statistics, and machine learning to understand how cities function and how better geospatial data can support more equitable planning.</p>
@@ -56,6 +56,19 @@ content="website">
       <a href="#projects" class="btn btn-primary">View research &amp; projects</a>
       <a href="assets/Atif_Aninda_Rahman_CV.pdf" class="btn btn-ghost">Download CV ↓</a>
     </div>
+    <aside class="updates">
+    <p class="updates-title mono">Updates</p>
+    <ul class="updates-list">
+      <li>
+        <span class="updates-date mono">Feb 2027</span>
+        A part of my master's capstone has been accepted for a paper presentation at the AAG Annual Meeting 2027, New York.
+      </li>
+      <li>
+        <span class="updates-date mono">Nov 2026</span>
+        Presented my M.S. capstone proposal successfully.
+      </li>
+    </ul>
+  </aside>
   </div>
   <div class="hero-legend mono" aria-hidden="true">
     <span class="legend-key"><i class="key-swatch key-a"></i>Urban Analytics</span>
@@ -72,7 +85,7 @@ content="website">
       <img src="assets/img/profile_photo.jpeg" alt="Atif Aninda Rahman" class="profile-photo">
     </div>
     <div class="col-body">
-      <p>I'm an MS student in Geographic Information Science in the Department of Geography and the Environment at the University of Denver. My masters capstone builds a urban accessiblity model for the Denver Aurora Lakewood region to measure whether people can really reach groceries and transit within 15 minutes, then uses spatial statistics like Moran's I, hot spot analysis, and GWR to see which regions are inaccessible and why. I found that about 1.5 million people have no walkable access to groceries, mostly in the outer suburbs.</p>
+      <p>I'm an MS student in Geographic Information Science in the Department of Geography and the Environment at the University of Denver. My master's capstone measures walking time from every home in the Denver urban area to grocery stores, parks, frequent transit, jobs, and shopping and services, on a street network that accounts for hills. It then asks who falls short, whether low access falls on lower-income households and households without a car, and what causes each gap. In an earlier pilot study, I found that about 1.5 million people had no grocery store within a 15-minute walk, mostly toward the edges of the urban area. I'm doing this work with the City and County of Denver as my client.</p>
       <p>Alongside my studies, I work as a Graduate Teaching Assistant, leading weekly labs of about 25 students in ArcGIS Pro, ArcPy and Cartographic Map outputs. Before Denver, I spent two and a half years as a Research Consultant in Energy &amp; Infrastructure Geospatial Analytics at the Center for Environmental and Geographic Information Services (CEGIS) in Dhaka. There I oversaw physical surveys, including route surveys, bathymetric surveys, and drone surveys, for an onshore gas pipeline feasibility study, then processed that data using GIS and Python for environmental and social impact assessments.</p>
       <p>I hold a Bachelor of Urban and Regional Planning from Khulna University of Engineering &amp; Technology (KUET), where my thesis identified suitable locations for green infrastructure using a multi criteria suitability analysis. I've also co-authored two peer reviewed journal articles, one on ecosystem services in urban Khulna and one on Bangladesh's COVID 19 crisis response, leading the core analysis on both.</p>
       <p>I'm now exploring PhD programs in Geography and GIScience. I want to use GeoAI to build better infrastructure data in the neighborhoods where official maps fall short, so accessibility research can be fairer, not just more accurate.</p>
@@ -94,9 +107,7 @@ content="website">
       <p class="eyebrow mono light">Research</p>
       <h2 class="section-title light">Research<br>interests</h2>
       <p class="col-note"><p class="light-body"><em>My research investigates how cities can become more equitable by improving the quality of geospatial data used to measure accessibility. I combine GIS, spatial statistics, remote sensing, and GeoAI to study whether residents truly have walkable access to essential services and why accessibility disparities emerge across neighborhoods.</em></p>
-<p class="light-body"><em>My master's research revealed that approximately 1.5 million residents in the Denver–Aurora–Lakewood metropolitan region lack walkable grocery access. During this work, I realized that many underserved neighborhoods also suffer from incomplete infrastructure data, limiting the reliability of accessibility models themselves.</em></p>
-<p class="light-body"><em>Finally, I want to develop GeoAI methods that automatically improve sidewalk and infrastructure mapping in data-poor environments and integrate these improved datasets into accessibility models that better support equitable urban planning.</em></p>
-<a href="assets/Atif_Aninda_Rahman_Research_Statement.pdf" class="btn btn-primary">Read Full Research Statement ↓</a>
+<p class="light-body"><em>I want to develop GeoAI methods that automatically improve sidewalk and infrastructure mapping in data-poor environments and integrate these improved datasets into accessibility models that better support equitable urban planning.</em></p>
 
 <div class="research-vision">
 <h4>Future Research Vision</h4>
@@ -119,10 +130,6 @@ content="website">
           <h3>Remote sensing for land use &amp; environmental monitoring</h3>
         <p class="light-body">Using satellite and drone imagery to track land cover, urban growth, and site suitability. This is the applied side of my geospatial work.</p>
         </li>
-        <li>
-          <h3>Reproducible geospatial data engineering</h3>
-          <p class="light-body">A recurring thread across my projects is building pipelines, not one-off maps: relational geodatabase design (ER diagrams, topology, subtypes), GDAL/OGR raster-vector workflows, and parallelized batch processing of multi-tile DEM data that mirrors HPC job-array patterns.</p>
-        </li>
       </ul>
     </div>
   </div>
@@ -134,7 +141,34 @@ content="website">
     <p class="eyebrow mono">Projects</p>
     <h2 class="section-title">Research and Projects</h2>
 
+          <article class="project-card">
+<div class="project-visual project-visual--pair" aria-hidden="true">
+          <img src="assets/img/capstone_study_area.png" alt="Map showing the study area for the capstone project, covering the Denver-Aurora-Lakewood metropolitan region">
+          <img src="assets/img/capstone_method.png" alt="Diagram showing the methodology for the capstone project, including slope-adjusted pedestrian network analysis and spatial statistical analysis">
+        </div>
+        <p class="project-tag mono">NOV 2026</p>
+        <h3>Who Can Walk to Daily Needs? Parcel-level walking access and equity in the Denver urban area.</h3>
+        <p>I am measuring walking time from every residential parcel in the Denver urban area to grocery stores, parks, frequent transit, jobs, and shopping and services. The walking network includes the slope of every street, so uphill trips take longer: on a 6% climb, a 15-minute walk covers 687 m instead of 847 m. I will then test whether low access falls on lower-income households, households without a car and areas at risk of displacement, and sort each gap by its cause: a missing destination, a network barrier, slope, or weak transit.
+           I expect straight-line distance rules to overstate access, especially where hills, interstates and rail lines cut the street grid. Based on my pilot study, where 58% of residents had no grocery store within a 15-minute walk, I expect low access to cluster toward the edges of the urban area and to fall more on households without a car. The final product is a set of priority areas, with the likely fix for each, that the city can use in planning.</p>
+        <p class="project-meta mono">Python (OSMnx, NetworkX, GeoPandas)· ArcGIS Pro · ArcGIS Network Analyst · USGS 3DEP · RTD GTFS · LEHD LODES</p>
+        <p class="project-meta mono">M.S. Capstone · In progress, defense May 2027 · Client: Community Planning and Development, City and County of Denver</p>
+        <a class="project-link mono" href="assets/Rahman_Capstone_Proposal.pdf" target="_blank" rel="noopener">Read the full proposal (PDF) ↓</a>
+      </article>
+    
     <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-visual" aria-hidden="true">
+         <img src="assets/img/good_sidewalk.png" alt="Good sidewalk coverage map showing the share of short trips made by active modes across 517 U.S. zones">
+        </div>
+        <p class="project-tag mono">NOV 2026</p>
+        <h3>Where AI Misses Sidewalks: Detecting Pedestrian Infrastructure Gaps with GeoAI
+A non-linear analysis of short-trip mode share across 517 U.S. zones</h3>
+        <p> Many cities do not have complete sidewalk data, so researchers increasingly map sidewalks from imagery with deep learning. I tested how far we can trust those maps. I applied Tile2Net, a pretrained deep learning model, to 3-inch aerial imagery across the Denver and Aurora region. I then built a gap detection method that splits streets into 30 m segments and uses probe lines every 3 m to flag missing sidewalks along about 5,000 street sides (149 km).
+            The model was precise but missed many sidewalks, with an IoU of 0.40, recall of 0.51 and precision of 0.87. To check the flagged gaps, I reviewed 60 of them in Google Street View. 72% turned out to be real sidewalks the model had missed. Flagged gaps were also about five times more common on the Denver side than on the Aurora side (20.5% vs 3.8%).</p>
+        <p class="project-meta mono">Tile2Net · Python · ArcGIS Pro · GeoPandas · Machine Learning</p>
+        <a class="project-link mono" href="https://github.com/atifanindarahman/sidewalk-gaps" target="_blank" rel="noopener">View on GitHub ↗</a>
+      </article>
 
       <article class="project-card">
         <div class="project-visual" aria-hidden="true">
@@ -143,11 +177,9 @@ content="website">
         <p class="project-tag mono">SEP 2026</p>
         <h3>Do Built-Environment Variable Affect Active Travel?
 A non-linear analysis of short-trip mode share across 517 U.S. zones</h3>
-        <p> A growing body of transportation research uses machine learning to argue that built-environment effects on travel behaviour are non-linear, with thresholds and saturation points. That work is almost entirely single-city and validated with random cross-validation on spatially autocorrelated data.
+        <p> There has been a growing number of studies using machine learning to claim the built environment affects walking and cycling in non-linear ways. Most cover one city and use random cross-validation. I tested this nationally across 517 U.S. zones, using FHWA NHTS trip data and the EPA Smart Location Database, and compared OLS with XGBoost.
 
-This project tested whether the finding replicates at national scale. Using FHWA's NextGen NHTS origin-destination data, I modelled the share of short trips (0–10 miles) made by active modes across 517 zones covering the contiguous United States, with built-environment predictors aggregated from 216,330 Census block groups and sociodemographic controls from the ACS.
-
-Under conventional random cross-validation, XGBoost outperformed ordinary least squares by a wide margin (R² 0.399 vs 0.276).</p>
+With random cross-validation, XGBoost looked far better than OLS (R² 0.40 vs 0.28). When I held out whole states, its advantage disappeared (0.13 vs 0.15). State alone explained 79% of the variation in active-mode share, so regional context outweighed the built environment at this scale. I also found and fixed three data problems that would have quietly biased the results.</p>
         <p class="project-meta mono">Active Transportation · Built Environment · Spatial Analysis · Machine Learning · XGBoost · SHAP · ArcGIS Pro · Python · Transportation Planning · Cross-Validation</p>
         <a class="project-link mono" href="https://github.com/atifanindarahman/active-transport-nonlinear-analysis/tree/main" target="_blank" rel="noopener">View on GitHub ↗</a>
       </article>
@@ -168,7 +200,7 @@ Under conventional random cross-validation, XGBoost outperformed ordinary least 
           <img src="assets/img/denver-hotspot-analysis.jpg" alt="Hot spot analysis map showing clusters of high and low grocery and transit accessibility across the Denver-Aurora-Lakewood region">
         </div>
         <p class="project-tag mono">MAY 2026</p>
-        <h3>Measuring 15-Minute City Accessibility in Denver Urban Areas: A Spatial Statistical Analysis</h3>
+        <h3>Measuring Accessibility in Denver Urban Areas: A Spatial Statistical Analysis</h3>
         <p>My Capstone research builds on this project that I did for my Geographic Information Analysis course. Here, I developed a slope-adjusted pedestrian network model to measure grocery and transit accessibility across the Denver-Aurora-Lakewood region, then testing for  spatial relation between urban amenities and demographic indicators using Global &amp; Local Moran's I, Getis-Ord Gi* hot spot analysis, and Geographically Weighted Regression. Found that roughly 1.5 million residents lack walkable grocery access, concentrated in outer suburbs, while access clusters tightly around the urban core.</p>
         <p class="project-meta mono">ArcGIS Pro · Moran's I · GWR · Hot Spot Analysis · Rasterio</p>
         <a class="project-link mono" href="assets/Final Report_Atif Aninda Rahman.pdf" target="_blank" rel="noopener">Read the full report (PDF) ↓</a>
@@ -256,13 +288,13 @@ Under conventional random cross-validation, XGBoost outperformed ordinary least 
           <p class="timeline-date mono">Sep 2025 — Present</p>
           <h3>Graduate Teaching Assistant</h3>
           <p class="timeline-org">University of Denver, Dept. of Geography and the Environment </p>
-          <p>Support instruction in GIS workflows, spatial data analysis, and computer cartography; lead weekly lab sessions (~25 students) in ArcGIS Pro and ArcPy; evaluate student assignments and communicate complex spatial analysis concepts through written and verbal instruction.</p>
+          <p>Support instruction in GIS workflows, spatial data analysis, and computer cartography; lead weekly lab sessions (~20 students) in ArcGIS Pro and ArcPy; evaluate student assignments and communicate complex spatial analysis concepts through written and verbal instruction.</p>
         </li>
         <li class="timeline-item">
           <p class="timeline-date mono">Sep 2025 — June 2027 (expected)</p>
           <h3>MS in Geographic Information Science</h3>
           <p class="timeline-org">University of Denver, Dept. of Geography and the Environment</p>
-          <p>Capstone: built a slope-adjusted pedestrian network model to measure 15-minute-city accessibility to groceries and transit across the Denver-Aurora-Lakewood region, then used spatial statistics (Global & Local Moran's I, Getis-Ord Gi*, GWR) to test whether that access is equitably distributed. Found that roughly 1.5 million residents lack walkable grocery access, concentrated in outer suburbs, while access clusters around the urban core.</br></br> Coursework: Geospatial Artificial Intelligence, Advanced Python Programming in GIS, Geographic Information Analysis.</br>GPA: 3.95/4.00</p>
+          <p>GPA: 3.95/4.00</p>
         </li>
         <li class="timeline-item">
           <p class="timeline-date mono">Mar 2023 — Aug 2025</p>
@@ -291,14 +323,24 @@ Under conventional random cross-validation, XGBoost outperformed ordinary least 
     <div class="col-body">
 <ul class="pub-list">
   <li class="pub-item">
+    <p class="pub-type mono">Presentation · 2027</p>
+    <p class="pub-title"><strong>Rahman, A. A.</strong> (2027, February). Uphill to Daily Needs: Diagnosing Gaps and Equity in Parcel-Level Walking Access in the Denver Urban Area. Paper Presentation. American Association of Geographers (AAG) Annual Meeting, New York, NY <em>(accepted)</em></p>
+    <p class="pub-desc">Supported by the Graduate Student Conference Travel Grant, Department of Geography and the Environment, University of Denver.</p>
+  </li>
+  <li class="pub-item">
     <p class="pub-type mono">Peer-reviewed journal article · 2021</p>
     <p class="pub-title">Haque, M. N., Alam, I., &amp; <strong>Rahman, A. A.</strong> (2021). Assessment of Ecosystem Services and Disservices in Urban Environment Using Multispectral Image Analysis and Geospatial Mapping. <em>MIST International Journal of Science and Technology</em>, 9(1), 55–65. <a href="https://mijst.mist.ac.bd/mijst/index.php/mijst/article/view/284"target="_blank" rel="noopener"> [DOI]</a></p>
-    <p class="pub-desc">Led the core geospatial analysis: tracked ecosystem service and disservice change across two Khulna City Corporation wards over 15 years (2005–2020) using NDVI and NDBI multispectral indices, DEM, and service area analysis to map rising built-up area and vegetation cover against worsening drainage and waste management.</p>
+    <p class="pub-desc">Conducted the geospatial analysis (NDVI, NDBI, DEM and service-area analysis) of environmental change across Khulna City.</p>
   </li>
   <li class="pub-item">
     <p class="pub-type mono">Peer-reviewed journal article · 2020</p>
     <p class="pub-title">Nitu, S. F. F., <strong>Rahman, A. A.</strong>, &amp; Haque, M. N. (2020). COVID-19 Scenario and Possible Crisis Management Plan in Bangladesh: A Review</a>. <em>Journal of Engineering Science</em>, 11(2), 45–60. <a href="https://www.semanticscholar.org/paper/COVID-19-Scenario-and-Possible-Crisis-Management-in-Nitu-Rahman/ddbda468e7b2e2c21f58302cb00f94d1b47060da" target="_blank" rel="noopener"> [DOI]</a></p>
-    <p class="pub-desc">Led the core data analysis behind a 10-sector crisis response framework (education, economy, government, medical services, and more), evaluating Bangladesh's pandemic-era policy response and proposing a post-COVID coordination structure for future crises.</p>
+    <p class="pub-desc">Compiled and analyzed sector-level data on COVID-19 impacts across education, the economy, governance and healthcare.</p>
+  </li>
+  <li class="pub-item">
+    <p class="pub-type mono">Journal article · (In Preparation)</p>
+    <p class="pub-title"><strong>Rahman, A. A.</strong> , &amp; Haque, M. N. Identifying Priority Sites for Green Infrastructure in Gopalganj, Bangladesh: A Nature-Based Solutions Approach.</a></p>
+    <p class="pub-desc">Designed the study, conducted the analysis and wrote the manuscript. Combined SCS-CN runoff modeling, network-based walking access to green space, and Landsat indices (NDBI, NDWI, LST) in a multi-criteria model validated with Monte Carlo sensitivity analysis and ROC (AUC 0.73), identifying 8.8% of the study area as priority sites.</p>
   </li>
 </ul>
     </div>
